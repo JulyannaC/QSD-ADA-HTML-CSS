@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enquete</title>
+</head>
+
+<body>
+
+<form action="/teste" method="get">
+<h2>Enquete</h2>
+
+<form id="enqueteForm">
+  <h3>Pergunta 1: Qual é o seu hobby favorito?</h3>
+  <label>
+    <input type="radio" name="hobby_favorito" value="Assistir séries/filmes"> Assistir séries/filmes
+  </label><br>
+  <label>
+    <input type="radio" name="hobby_favorito" value="Ler"> Ler
+  </label><br>
+  <label>
+    <input type="radio" name="hobby_favorito" value="Escutar música"> Escutar música
+  </label><br>
+  <label>
+    <input type="radio" name="hobby_favorito" value="Jogar"> Jogar
+  </label><br>
+
+  <h3>Pergunta 2: Qual é o seu gênero de filme favorito?</h3>
+  <label>
+    <input type="radio" name="gênero_favorito" value="Terror"> Terror
+  </label><br>
+  <label>
+    <input type="radio" name="gênero_favorito" value="Romance"> Romance
+  </label><br>
+  <label>
+    <input type="radio" name="gênero_favorito" value="Comédia"> Comédia
+  </label><br>
+  <label>
+    <input type="radio" name="gênero_favorito" value="Suspense"> Suspense
+  </label><br>
+
+  <h3>Comentários:</h3>
+  <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea><br>
+
+  <input type="submit" value="Enviar">
+</form>
+
+
+</body>
+</html>
