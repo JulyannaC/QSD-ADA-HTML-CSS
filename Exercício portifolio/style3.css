@@ -1,0 +1,115 @@
+/* Reset de estilos para remover margens e paddings padrões */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'InstrumentSerif-Regular.ttf';
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #EAE2CD;
+    display: flex;
+    align-items: center;
+    color: orangered;
+    padding: 20px 80px;
+}
+
+nav ul {
+    list-style-type: none;    
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: orange;
+}
+
+section {
+    margin: 40px 20px;
+}
+
+h2 {
+    color: palevioletred;
+}
+
+#sobre{
+    display: flex;
+    padding: 5px;
+    gap: 40px;
+}
+
+.profile-info{
+    width: 60%;
+    text-align: center;
+}
+
+.profile img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin: right 10px ;
+}
+
+#habilidades ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#habilidades li {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 8px 12px;
+    background-color: palevioletred;
+    color: white;
+    border-radius: 5px;
+}
+
+.projeto {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.projeto h3 {
+    color: palevioletred;
+}
+
+.projeto a {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: palevioletred;
+    color: #fff;
+    text-decoration: none;
+}
+
+/*.logo_1{
+    width: 40%;
+}*/
+
+.logo_1 img {
+    max-width:150px;
+    max-height:150px;
+    height: auto;
+    margin-left:50px;
+}
+
+footer {
+    background-color: #EAE2CD;
+    color: orangered;
+    text-align: center;
+    padding: 10px ;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+

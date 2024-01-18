@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-areas:
+                "header header header"
+                "nav main main"
+                "footer footer footer";
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+        }
+
+        @media screen and (max-width:600px) {
+            .grid-container {
+                grid-template-columns: 1fr;
+                grid-template-areas:
+                    "header "
+                    "nav"
+                    "main"
+                    "footer";
+            }
+
+        }
+
+
+
+        .header {
+            grid-area: header;
+            background-color: #3498db;
+            height: 50px;
+        }
+
+        .nav {
+            grid-area: nav;
+            background-color: #2ecc71;
+        }
+
+        .main {
+            grid-area: main;
+            background-color: #ecf0f1;
+        }
+
+        .footer {
+            grid-area: footer;
+            background-color: #e74c3c;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <header class="header">Header</header>
+        <nav class="nav">Navegação</nav>
+        <main class="main">Main</main>
+        <footer class="footer">Footer</footer>
+    </div>
+</body>
+
+</html>
