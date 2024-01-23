@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: var(--montserrat);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+:root{
+    --rosa: #f17ea1;
+    --amareloC: #ebc60d;
+    --azul: #1b8df0;
+    --roxo: #723172;
+    --cinza: #dddddd;
+    --cinzaC:#f0f0f0;
+    --branco: #fff;
+    --preto: #000;
+    --montserrat: 'Montserrat', 'sans-serif'
+}
+
+body{
+    background-color: var(--cinza);
+}
+
+header{
+    background-color: var(--rosa);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    height: 90px;
+
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    padding: 0 40px;
+
+    box-shadow: 0px 14px 31px 0px rgba(0,0,0,0.2);
+    z-index: 2;
+}
+
+span{
+    color: var(--branco);
+}
+
+h1{
+    color: var(--preto)
+}
+
+header>div:nth-child(1){
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-left: 40px;
+    color: var(--preto);
+}
+
+/* padrões */
+
+.btn{
+    transition: ease all 0.2s;
+    padding: 10px 15px;
+    border: var(--branco) solid 1px;
+    border-radius: 10px;
+    color: var(--branco);
+    font-weight: 500;
+    text-decoration: none;
+    font-size: smaller;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: var(--roxo);
+    color: var(--branco);
+    border: var(--rosa) solid 1px;
+}
+
+.btn:active{
+    background-color: var(--roxo);
+}
+
+.link{
+    transition: all ease 0.2s;
+    color: var(--branco);
+    text-decoration: none;
+}
+
+/* MAIN */
+
+main{
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--cinzaC);
+}
+
+main img.img {
+    width: 90%;
+    height: auto; /* Mantém a proporção da imagem */
+    padding-top: 80px;
+} 
+
+main div{
+    width: 50%;
+}
+
+.Sobre{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    gap: 20px;
+    height: 100%;
+    background-color: var(--cinzaC);
+    padding: 100px 50px 0 50px;
+    width: 80%;
+    z-index: 1;
+}
+
+.img{
+    transition: all ease 0.5s;
+    object-fit: cover;
+}
+
+.img:hover{
+    transform: scale(1.2);
+}
